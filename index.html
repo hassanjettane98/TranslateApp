@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TranslateApp</title>
+    <link rel="stylesheet" href="style.js">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script  defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Translate</a>
+          <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="toggle">
+        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+      </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <select id="se1" class="form-select" aria-label="Default select example">
+        <option selected>Source language</option>
+        <option value="1">fr</option>
+        <option value="2">en</option>
+        <option value="3">ar</option>
+      </select>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type Here ..."></textarea>
+      <select id="se2" class="form-select" aria-label="Default select example">
+        <option selected>Target language</option>
+       <option value="1">fr</option>
+        <option value="2">en</option>
+        <option value="3">ar</option>
+      </select>
+      <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+      <button id="btn1" type="button" class="btn btn-primary">Translate</button>
+      <button id="btn2" type="button" class="btn btn-secondary">Reset</button>
+
+
+      <script src="translate.js"></script>
+    
+</body>
+</html>

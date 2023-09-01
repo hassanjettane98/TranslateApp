@@ -1,0 +1,10 @@
+body {
+    background-color: #fff; /* set default background color */
+    color: #333; /* set default text color */
+  }
+  
+  .dark-mode {
+    background-color: #333; /* set dark mode background color */
+    color: #fff; /* set dark mode text color */
+  }
+  
